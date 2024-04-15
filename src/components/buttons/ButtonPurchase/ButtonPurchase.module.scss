@@ -1,0 +1,45 @@
+.button {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3a86ff;
+    position: relative;
+}
+
+.button:hover {
+    color: #1b71fb;
+}
+
+.button::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.button:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.delete_button::before {
+    background-color: #ff0000;
+}
+.buy_button::before {
+    background-color: #00ff00;
+}
+.edit_button::before {
+    background-color: #ff9d00;
+}
+.create_button::before {
+    background-color: #0000ff;
+}
+.default_button::before {
+    background-color: #0000ff;
+}

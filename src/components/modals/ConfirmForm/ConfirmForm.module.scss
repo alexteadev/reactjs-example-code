@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+
+    .text {
+        .item_name {
+            font-weight: bold;
+        }
+    }
+
+    .actions {
+        display: flex;
+        gap: 30px;
+    }
+}

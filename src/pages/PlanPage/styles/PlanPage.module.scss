@@ -1,0 +1,193 @@
+.hero {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 10px;
+
+    &__title {
+        font-weight: 300;
+        font-size: 56px;
+        text-align: center;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: rgba(174, 174, 174, 0.55);
+
+        span {
+            font-weight: 600;
+            color: #e4e4e4;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 36px;
+        }
+    }
+
+    &__arrow {
+        border: none;
+        width: 24px;
+        height: 24px;
+        background: transparent url('../../../assets/svg/arrow.svg') center center no-repeat;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%) rotate(90deg);
+        cursor: pointer;
+
+        @media (max-width: 600px) {
+            bottom: 2px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 0px;
+    }
+
+    
+}
+
+.clients {
+    padding: 140px 0 150px;
+
+    &__title {
+        font-size: 40px;
+        line-height: 150%;
+        font-weight: 600;
+        color: #747474;
+        max-width: 520px;
+
+        @media (max-width: 600px) {
+            font-size: 27px;
+        }
+    }
+
+    &__title span {
+        font-weight: 300;
+        color: rgba(68, 68, 68, 0.55);
+    }
+
+    &__body {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media (max-width: 600px) {
+            font-size: 5px;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 20px 0 0;
+
+        // &__item img {
+        //     width: 70%;
+        //     height: auto;
+        // }
+
+        & div {
+            width: 70%;
+            height: auto;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px 40px;
+    border-radius: 10px;
+
+    background: rgb(42,150,151);
+    background: linear-gradient(0deg, rgba(42,150,151,1) 0%, rgba(116,53,123,1) 100%);
+
+    scroll-margin-top: 30px;
+
+    &__text {
+        font-size: 32px;
+        line-height: 150%;
+        color: #e3e4e6;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    &__text span {
+        color: rgba(227, 228, 230, 0.55);
+        font-weight: 300;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #E3E4E6;
+    }
+
+    &__gallery {
+        flex: 0 0 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // рисуем сетку 2*4, и указываем место расположение, с 1й по 2й колонку и т.д, смотри в &__img:nth-child(1) {...}
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 992px) {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+    &__img {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__img:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    &__img:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    &__img:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
+}
+
+.testSlice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px 40px;
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+
+    .text {
+        .item_name {
+            font-weight: bold;
+        }
+    }
+
+    .range {
+        min-width: 250px;
+    }
+
+    .actions {
+        display: flex;
+        gap: 30px;
+    }
+}

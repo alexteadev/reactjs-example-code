@@ -1,0 +1,1 @@
+export { BuyForm as default } from './BuyForm';

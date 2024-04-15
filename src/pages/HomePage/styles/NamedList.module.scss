@@ -1,0 +1,62 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    gap: 25px;
+
+    button {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #3a86ff;
+        position: relative;
+    }
+
+    button:hover {
+        color: #1b71fb;
+        text-decoration: underline;
+    }
+
+    a {
+        color: #1b71fb;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #1b71fb;
+        text-decoration: underline;
+    }
+    .active {
+        color: #1b71fb;
+        text-decoration: underline;
+    }
+
+    &_create {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+
+        input {
+            max-width: 120px;
+        }
+    }
+
+    &_show {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &_element {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &_button {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}

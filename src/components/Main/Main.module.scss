@@ -1,0 +1,10 @@
+@use '../../styles/mixins' as mixins;
+
+.main {
+    flex: 1 1 auto;
+    padding: 12px 0px;
+
+    &__container {
+        @include mixins.container;
+    }
+}
